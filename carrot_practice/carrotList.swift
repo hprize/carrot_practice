@@ -9,8 +9,8 @@ import SwiftUI
 
 struct carrotList: View {
     var body: some View {
-        List (carrots){
-            
+        List (carrots){ carrot in
+            carrotRow()
         }
     }
 }

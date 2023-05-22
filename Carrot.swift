@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Carrot: Codable {
+struct Carrot: Codable, Identifiable {
     var id = UUID()
     let createdTime: String
     let post: Post
