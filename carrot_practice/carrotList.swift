@@ -9,7 +9,7 @@ import SwiftUI
 
 struct carrotList: View {
     var body: some View {
-        List {
+        List (carrots){
             
         }
     }

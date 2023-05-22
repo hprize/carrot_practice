@@ -8,6 +8,7 @@
 import Foundation
 
 struct Carrot: Codable {
+    var id = UUID()
     let createdTime: String
     let post: Post
     let author: Author
