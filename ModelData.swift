@@ -7,7 +7,7 @@
 
 import Foundation
 
-var carrots: [Carrot] = load("carrotData.json")
+var carrots: [Carrot] = Carrot.dummies
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

@@ -8,9 +8,33 @@
 import SwiftUI
 
 struct carrotList: View {
+    @State var carrots: [Carrot] = Carrot.dummies
+    @State var isLoad = false
+    
     var body: some View {
-        List (carrots){ carrot in
-            carrotRow()
+        NavigationView {
+            List (carrots) { carrot in
+                if isLoad {
+                    NavigationLink {
+                        carrotDetail(carrot: carrot)
+                    } label: {
+                        carrotRow(carrot: carrot)
+                    }
+                } else {
+                    NavigationLink {
+                        carrotDetail(carrot: carrot)
+                    } label: {
+                        carrotRow(carrot: carrot)
+                    }
+                    .redacted(reason: .placeholder)
+                }
+
+            }
+            .listStyle(PlainListStyle())
+        }
+        .onAppear {
+            carrots = load("carrotData.json")
+            isLoad = true
         }
     }
 }

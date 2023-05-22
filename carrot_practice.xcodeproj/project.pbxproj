@@ -20,6 +20,7 @@
 		6F91ADB62A1721A900218C61 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F91ADB52A1721A900218C61 /* ModelData.swift */; };
 		6F91ADB82A1721FC00218C61 /* Carrot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F91ADB72A1721FC00218C61 /* Carrot.swift */; };
 		6FA234B52A1B007F0083A774 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 6FA234B42A1B007F0083A774 /* .gitattributes */; };
+		6FA234F72A1B05350083A774 /* carrotDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA234F62A1B05350083A774 /* carrotDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		6F91ADB52A1721A900218C61 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		6F91ADB72A1721FC00218C61 /* Carrot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carrot.swift; sourceTree = "<group>"; };
 		6FA234B42A1B007F0083A774 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		6FA234F62A1B05350083A774 /* carrotDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carrotDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		6F91AD762A17182900218C61 = {
 			isa = PBXGroup;
 			children = (
+				6FA234F62A1B05350083A774 /* carrotDetail.swift */,
 				6FA234B42A1B007F0083A774 /* .gitattributes */,
 				6F91ADB72A1721FC00218C61 /* Carrot.swift */,
 				6F91ADB52A1721A900218C61 /* ModelData.swift */,
@@ -291,6 +294,7 @@
 				6F91ADB22A17209E00218C61 /* carrotList.swift in Sources */,
 				6F91ADB82A1721FC00218C61 /* Carrot.swift in Sources */,
 				6F91ADB02A1718EF00218C61 /* carrotRow.swift in Sources */,
+				6FA234F72A1B05350083A774 /* carrotDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,10 +13,15 @@ struct carrotRow: View {
     
     var body: some View {
         HStack{
-            Image("cat")
-                .resizable()
-                .frame(width: 108, height: 108)
-                .cornerRadius(6)
+            AsyncImage(url: carrot.product.imageURLs[0]) { image in
+                image
+                    .resizable()
+                    .frame(width: 108, height: 108)
+                    .cornerRadius(6)
+            } placeholder: {
+                ProgressView()
+                    .frame(width: 108, height: 108)
+            }
             
             Spacer ()
             
@@ -33,11 +38,11 @@ struct carrotRow: View {
                 HStack {
                     HStack {
                         Image(systemName: "message")
-                        Text("3")
+                        Text(String(carrot.post.reaction.commentsCount))
                     }
                     HStack {
                         Image(systemName: "heart")
-                        Text("2")
+                        Text(String(carrot.post.reaction.heartsCount))
                     }
                 }
                 .frame(width: 221, alignment: .trailing)
